@@ -1,0 +1,52 @@
+USE candy_sales_analysis;
+
+CREATE TABLE bronze.candy_distributor(
+	Table1 VARCHAR(15),
+	Field VARCHAR(15),
+	Description varchar(MAX)
+);
+
+
+CREATE TABLE bronze.candy_factories (
+    Factory VARCHAR(50),
+    Latitude FLOAT,
+    Longitude FLOAT
+);
+
+CREATE TABLE bronze.candy_product(
+	Division VARCHAR(15),
+	Product_Name VARCHAR(200),
+	Factory VARCHAR(20),
+    Product_ID VARCHAR(20),
+    Unit_Price float,
+    Unit_Cost float
+);
+
+DROP TABLE IF EXISTS Candy_Sales;
+
+CREATE TABLE bronze.Candy_Sales (
+    [Row ID] INT,
+    [Order ID] VARCHAR(50),
+    [Order Date] DATE,
+    [Ship Date] DATE,
+    [Ship Mode] VARCHAR(50),
+    [Customer ID] INT,
+    [Country/Region] VARCHAR(50),
+    [City] VARCHAR(50),
+    [State/Province] VARCHAR(50),
+    [Postal Code] VARCHAR(20),
+    [Division] VARCHAR(30),
+    [Region] VARCHAR(30),
+    [Product ID] VARCHAR(50),
+    [Product Name] VARCHAR(100),
+    [Sales] FLOAT,              
+    [Units] INT,
+    [Gross Profit] FLOAT,
+    [Cost] FLOAT
+);
+
+CREATE TABLE bronze.candy_targets(
+	Division VARCHAR(15),
+	Target INT
+);  
+
