@@ -1,3 +1,14 @@
+/*
+**********************************************************************************************
+DDL SCRIPT :Silver Layer (Cleaned & Enriched Layer)
+**********************************************************************************************
+Performs data cleaning, validation, and transformation.
+Removes duplicates, fixes data types, standardizes formats, and joins reference tables (products, factories, ZIPs, targets).
+Example: candy_sales_enriched, candy_sales_features
+*/
+
+
+
 USE candy_sales_analysis;
 
 --cleans and validates the bronze.candy_sales table 
