@@ -1,3 +1,13 @@
+/*
+***********************************************************************************************************
+DDL SCRIPT :Bronze Layer (Raw Data Layer)
+***********************************************************************************************************
+
+Stores raw data directly from source files (CSV/Excel) without modifications.
+Used for data ingestion and historical reference.
+Example: candy_sales_raw, candy_products_raw, candy_factories_raw
+*/
+
 USE candy_sales_analysis;
 
 CREATE TABLE bronze.candy_distributor(
